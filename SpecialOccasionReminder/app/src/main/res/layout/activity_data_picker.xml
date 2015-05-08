@@ -1,0 +1,84 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.nkharish.specialoccasionremainder.DataPicker"
+    android:background="#006699">
+    <!-- Some random comment -->
+    <EditText
+        android:id="@+id/search"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/search_hint"
+        android:inputType="text"
+        android:imeOptions="actionSend" />
+
+    <EditText
+        android:id="@+id/occasion"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/occasion_hint"
+        android:inputType="text"
+        android:imeOptions="actionSend"
+        android:layout_below="@+id/search"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="30dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/occasion"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/day_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="something"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/btn_change_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pick Date"
+            android:layout_marginLeft="10dp"
+            android:textColor="#000000"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/btnViewAll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View All"
+        android:layout_marginTop="47dp"
+        android:layout_below="@+id/add"
+        android:layout_alignRight="@+id/occasion"
+        android:layout_alignEnd="@+id/occasion" />
+
+    <Button
+        android:id="@+id/btnShowInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show Info"
+        android:layout_alignTop="@+id/btnViewAll"
+        android:layout_alignRight="@+id/spinner1"
+        android:layout_alignEnd="@+id/spinner1"
+        android:layout_marginRight="34dp"
+        android:layout_marginEnd="34dp" />
+
+</RelativeLayout>
